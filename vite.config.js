@@ -4,7 +4,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 
 
-
 export default defineConfig({
+  base: "/asfapo/",
   plugins: [react(), tailwindcss()],
 });
+
