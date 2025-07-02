@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="0 0 256 256">
+  <!-- Green hexagon -->
+  <path fill="#43853d" d="M128 0l111 64v128l-111 64L17 192V64z"/>
+  <!-- "node" text styling -->
+  <path fill="#fff" d="M77 170v-84l40-24 40 24v84l-40 24z"/>
+  <!-- "JS" badge -->
+  <circle cx="200" cy="56" r="32" fill="#3c873a"/>
+  <text x="200" y="66" font-size="40" font-family="Arial, sans-serif" fill="#fff" text-anchor="middle">JS</text>
+</svg>
