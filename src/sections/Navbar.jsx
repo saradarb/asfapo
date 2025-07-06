@@ -1,33 +1,28 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+
 function Navigation() {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link" href="#home">
-          Home
-        </a>
+        <a className="nav-link" href="#home">Home</a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#about">
-          About
-        </a>
+        <a className="nav-link" href="#about">About</a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#work">
-          Work
-        </a>
+        <a className="nav-link" href="#work">Work</a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#contact">
-          Contact
-        </a>
+        <a className="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   );
 }
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
@@ -43,7 +38,7 @@ const Navbar = () => {
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
             <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+              src={`${import.meta.env.BASE_URL}assets/${isOpen ? "close" : "menu"}.svg`}
               className="w-6 h-6"
               alt="toggle"
             />

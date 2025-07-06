@@ -1,9 +1,15 @@
 import { motion } from "motion/react";
+
 const Card = ({ style, text, image, containerRef }) => {
+  const finalSrc =
+    image?.startsWith("http") || image?.startsWith(import.meta.env.BASE_URL)
+      ? image
+      : `${import.meta.env.BASE_URL}${image?.replace(/^\/+/, "")}`;
+
   return image && !text ? (
     <motion.img
       className="absolute w-15 cursor-grab"
-      src={image}
+      src={finalSrc}
       style={style}
       whileHover={{ scale: 1.05 }}
       drag
